@@ -1,6 +1,12 @@
+@font-face {
+    font-family: "Noto";
+    src: url(./font/NotoSansCJKsc-Black.otf);
+}
+
 .bg-line {
     position: relative;
     display: inline-block;
+    margin-top: 200px;
 }
 
 .info {
@@ -208,4 +214,142 @@ input:checked {
     background: url(./img/turbo-on.png);
     width: 168px;
     height: 106px;
+}
+
+.spin {
+    position: absolute;
+    background: url(./img/spin-select.png);
+    background-position: center;
+    background-size: cover;
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    left: 1904px;
+    bottom: 32px;
+    display: none;
+}
+
+.spin:hover {
+    display: inline-block;
+}
+
+.spin-item {
+    width: 25px;
+    height: auto;
+}
+
+.spin__select {
+    font-family: "Noto";
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #ffd100;
+    list-style: none;
+    cursor: pointer;
+}
+
+.spin__select li:hover {
+    color: #fff;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.auto {
+    position: absolute;
+    top: 58px;
+    left: 1897px;
+}
+
+.auto-btn {
+    position: relative;
+    width: 402px;
+    height: 114px;
+    background: url(./img/auto-normal.png);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.wr-spin:hover .auto-btn {
+    background: url(./img/auto-hover.png);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.auto-img {
+    top: 50%;
+    position: absolute;
+    left: 18%;
+    transform: translate(0, -50%);
+}
+
+.wr-spin:hover .spin {
+    display: inline-block;
+    transition: .8s;
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+    -ms-transition: .8s;
+    -o-transition: .8s;
+}
+
+.play {
+    position: absolute;
+    display: inline-block;
+    background: url(./img/btn-spin-normal.png);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    top: -68px;
+    left: 2100px;
+}
+
+.play-ico {
+    position: relative;
+    width: 353px;
+    height: 353px;
+}
+
+.play-ico-btn{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.play-ico:hover img {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transition: .8s;
+  -webkit-transition: .8s;
+  -moz-transition: .8s;
+  -ms-transition: .8s;
+  -o-transition: .8s;
+}
+
+.play:hover {
+    background: url(./img/btn-spin-hover.png);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
 }
