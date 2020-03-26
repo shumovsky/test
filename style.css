@@ -2,9 +2,7 @@
     font-family: "Noto";
     src: url(./font/NotoSansCJKsc-Black.otf);
 }
-.body {
-    width: 1600px;
-}
+
 .bg-line {
     position: relative;
     display: inline-block;
