@@ -22,6 +22,9 @@
     width: 114px;
     height: 114px;
 }
+.info-img .info-i:hover .info-normal {
+    opacity: 0;
+}
 
 .info-hover {
     position: absolute;
